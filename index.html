@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  
+  <div class="container">
+    <div class="wish-box">
+      <p>
+
+      </p>
+    </div>
+    
+    
+    <div class="contact">
+      <form action="https://formspree.io/f/mgegeoqk" method="POST" id="newyearform">
+        <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message" id="resizableTextarea" oninput="autoResize(this)" required></textarea>
+        <div class="input-box">
+          <input class="input-box1" name="Name" type="text" placeholder="Plz write Your Name🥺" required>
+          <input type="submit" value="Send Message" class="btn">
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  <script>
+    function autoResize(textarea) {
+      // Set the textarea height to its scrollHeight
+      textarea.style.height = '100px';
+      textarea.style.height = (textarea.scrollHeight) + 'px';
+    }
+    window.addEventListener("scroll", function () {
+        const pElement  = document.querySelector(".scrolldown");
+        const scrollPos = window.scrollY;
+        const scrollThreshold = 100;
+
+        if (scrollPos > scrollThreshold) {
+            pElement.style.display = 'none';
+        }
+    });
+  </script>
+
+</body>
+</html>
